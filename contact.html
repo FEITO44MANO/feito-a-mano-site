@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Handmade ceramics made with love — no two pieces are the same.">
+<meta name="keywords" content="ceramics, pottery, handmade, artisan, studio, feito a mano">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preload" href="assets/css/feito.css" as="style">
+<link rel="stylesheet" href="assets/css/feito.css">
+<title>Contact — Feito a Mano</title>
+
+</head>
+<body>
+
+<div id="loader" class="loader" aria-live="polite" aria-label="Loading">
+  <svg class="ball" viewBox="0 0 120 120" role="img" aria-label="8-ball">
+    <defs>
+      <radialGradient id="g" cx="35%" cy="30%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+        <stop offset="60%" stop-color="#000000" stop-opacity="0.1"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="0.65"/>
+      </radialGradient>
+    </defs>
+    <circle cx="60" cy="60" r="54" fill="url(#g)" stroke="#1a1a1a" stroke-width="2"/>
+    <circle cx="70" cy="46" r="24" fill="#f6f6f6" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="70" y="54" text-anchor="middle" font-family="ui-sans-serif, system-ui, Segoe UI, Arial" font-size="22" font-weight="800" fill="#1a1a1a">8</text>
+  </svg>
+  <div class="loading-text">Feito a Mano Studios</div>
+</div>
+
+
+<header class="site-header">
+  <div class="topbar">
+    <a class="brand" href="index.html" aria-label="Feito a Mano">
+      <img src="assets/img/logo.jpg" alt="Feito a Mano logo" class="brandmark">
+      <span class="wordmark">FEITO A MANO</span>
+    </a>
+    <div class="lang-social">
+      <button id="langToggle" class="btn small" aria-label="Switch language">PT</button>
+      <nav class="social">
+        <a id="igLink" href="#" aria-label="Instagram" class="ico ig" target="_blank" rel="noopener"></a>
+        <a id="etsyLink" href="#" aria-label="Etsy" class="ico etsy" target="_blank" rel="noopener"></a>
+      </nav>
+    </div>
+  </div>
+  <nav class="nav">
+    <a data-i18n="nav_home" href="index.html">Home</a>
+    <a data-i18n="nav_policies" href="shop-policies.html">Shop Policies</a>
+    <a data-i18n="nav_custom" href="custom-orders.html">Custom Orders</a>
+    <a data-i18n="nav_about" href="about.html">About</a>
+    <a data-i18n="nav_contact" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="wrapper prose">
+
+  <h1 data-i18n="contact_title">Contact</h1>
+  <p data-i18n="contact_copy">Questions about an order, wholesale, or a custom idea? Send a note and we’ll get back within one business day.</p>
+  <form name="contact" method="post" data-netlify="true" class="form" netlify-honeypot="bot-field">
+    <p class="hidden"><label>Don’t fill this out: <input name="bot-field"></label></p>
+    <label data-i18n-label="label_name">Name<input type="text" name="name" required></label>
+    <label data-i18n-label="label_email">Email<input type="email" name="email" required></label>
+    <label data-i18n-label="label_message">Message<textarea name="message" rows="6" required></textarea></label>
+    <button class="btn primary" type="submit" data-i18n="send">Send</button>
+  </form>
+
+</main>
+
+<footer class="site-footer">
+  <form name="newsletter" method="post" data-netlify="true" class="newsletter" netlify-honeypot="bot-field">
+    <p class="hidden"><label>Don’t fill this out: <input name="bot-field"></label></p>
+    <label class="inline">
+      <span data-i18n="nl_label">Join our newsletter for drops & markets:</span>
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <button class="btn primary" type="submit" data-i18n="nl_btn">Subscribe</button>
+    </label>
+  </form>
+  <nav class="social">
+    <a id="igLinkFoot" href="#" aria-label="Instagram" class="ico ig" target="_blank" rel="noopener"></a>
+    <a id="etsyLinkFoot" href="#" aria-label="Etsy" class="ico etsy" target="_blank" rel="noopener"></a>
+  </nav>
+  <p>&copy; <span id="year"></span> Feito a Mano Studios · <span data-i18n="tagline">feito for mano</span></p>
+</footer>
+<script src="assets/js/lang.js"></script>
+<script src="assets/js/feito.js"></script>
+
+</body>
+</html>
